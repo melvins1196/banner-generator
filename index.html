@@ -6,12 +6,42 @@
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     $(function(){
-      
+      $('button').click(function() {
+        var color= $('#color').val();
+        $('#banner').css('background-color', color);
+        var h1html = $('h1').html();
+        var name = $('#name').val();
+        $('h1').html('Hey ' + name + ' nice to meet you.');
+      });
     });
   </script>
+  <style>
+    #banner {
+      /*background-color: '#color';*/
+      height: 200px;
+      width: 700px;
+      
+    }
+  </style>
   
   </head>
   <body>
+ Name: <input id='name'><br>
   
+ Favorite Color: <input id='color'>
+ <br>
+
+  Favorite Hobby:
+  <input type='radio' name='hobby' value='sports'>Sports
+  <input type='radio' name='hobby' value='video games'>Video Games
+  <input type='radio' name='hobby' value='sleep'>Sleep
+  <input type='radio' name='hobby' value='school'>School <br>
+ 
+ <button>Generate Banner</button>
+ 
+<div id='banner'>
+  <h1></h1>
+</div>
+ 
   </body>
 </html>
