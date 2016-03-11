@@ -6,19 +6,19 @@
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     $(function(){
-      $('button').click(function() {
-        var color= $('#color').val();
-        $('#banner').css('background-color', color);
+      $('button').click(function() {/*this starts of by saying what will happen when the button is clicked*/
+        var color= $('#color').val();/*gives color a variable*/
+        $('#banner').css('background-color', color);/*makes whatever color the user types in the color of the background*/
         var h1html = $('h1').html();
-        var name = $('#name').val();
-        $('h1').html('Hey ' + name + ' nice to meet you.');
+        var name = $('#name').val();/*gives name a variable*/
+        $('h1').html('Hey ' + name + ' nice to meet you.');/*says the text to give when the button is clicked*/
       });
     });
   </script>
   <style>
     #banner {
       /*background-color: '#color';*/
-      height: 200px;
+      height: 200px;/*sets the width and height of the background*/
       width: 700px;
       
     }
